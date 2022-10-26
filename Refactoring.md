@@ -9,3 +9,9 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+1. The refactored method can use the trivial key initialized and can be returned as the default value when no input is provided
+2. The method here can check if the input is an object and then create the hash if the input length is >256 or return the original value otherwise
+3. The number of conditions used can be reduced along with the number of lines for cleaner code
+4. Readability of the code can be improved by using fewer lines of code and adding comments to the method
+5. Unit tests added for when no input is provided, input with length > 256 and input with length < 256
